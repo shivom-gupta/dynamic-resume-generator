@@ -107,3 +107,5 @@ Contributions are welcome\! If you have any suggestions or find any bugs, please
 This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 The `altacv.cls` file is used under the LaTeX Project Public License (LPPL), v1.3c or later. See the `LICENSE` file for more information.
+
+[![Run Tests](https://github.com/shivom-gupta/dynamic-resume-generator/actions/workflows/ci.yml/badge.svg)](https://github.com/shivom-gupta/dynamic-resume-generator/actions/workflows/ci.yml)
