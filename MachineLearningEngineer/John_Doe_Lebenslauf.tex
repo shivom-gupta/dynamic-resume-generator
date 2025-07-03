@@ -1,0 +1,163 @@
+% resume_template.tex
+\documentclass[9pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=0.8cm,right=0.8cm,top=0.8cm,bottom=0.8cm,columnsep=0.75cm}
+\usepackage{paracol}
+\usepackage[none]{hyphenat}
+\usepackage{microtype}
+
+
+\ifxetexorluatex
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{PrimaryColor}{HTML}{2E2E2E}
+\definecolor{SecondaryColor}{HTML}{0039AC}
+\definecolor{ThirdColor}{HTML}{FFAA00}
+\definecolor{BodyColor}{HTML}{666666}
+\definecolor{EmphasisColor}{HTML}{2E2E2E}
+\definecolor{BackgroundColor}{HTML}{E2E2E2}
+
+\colorlet{name}{PrimaryColor}
+\colorlet{tagline}{SecondaryColor}
+\colorlet{heading}{PrimaryColor}
+\colorlet{headingrule}{ThirdColor}
+\colorlet{subheading}{SecondaryColor}
+\colorlet{accent}{SecondaryColor}
+\colorlet{emphasis}{EmphasisColor}
+\colorlet{body}{BodyColor}
+\pagecolor{BackgroundColor}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\small\bfseries}
+\renewcommand{\cvsectionfont}{\Large\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\newenvironment{sloppypar*}{\sloppy\ignorespaces}{\par}
+
+\begin{document}
+    \sloppy
+    \name{ John Doe }
+    \tagline{ Machine Learning Engineer }
+    \photoL{4cm}{../me.png}
+
+    \personalinfo{
+        \email{ john.doe.email@email.com }\smallskip
+        \phone{ +49 123 4567890 }
+        \location{ Berlin, Germany }\\
+        \linkedin{ john-doe }
+        \github{ john-doe }
+        \homepage{ https://john-doe.github.io/ }
+    }
+    
+    \makecvheader
+    \columnratio{0.25}
+    \begin{paracol}{2}
+        
+        \cvsection{ Technische \\ Kenntnisse }
+            \begin{sloppypar*}
+                \cvtags{
+                    \noindent Deep Learning/true, NLP/true, Computer Vision, Machine Learning/true, Data Preprocessing/true, Feature Engineering/true, CI CD                }
+                \cvtags{
+                    \noindent PyTorch/true, TensorFlow, Python/true, Git/true, Docker, AWS/true, Linux/true, C, C++                }
+            \end{sloppypar*}
+
+        \cvsection{ Soziale \\ Kompetenzen }
+            \begin{sloppypar*}
+                \cvtags{
+Problemlösungskompetenz/true, Analytisches Denken/true, Teamarbeit/true, Kommunikation/true                }
+            \end{sloppypar*}
+        
+        \cvsection{ Aktuell in \\ Weiterbildung }
+            \begin{sloppypar*}
+                \cvtags{
+Verstärkendes Lernen/true, MLOps, Deutsche Sprache/true                }
+            \end{sloppypar*}
+        
+        \cvsection{ Sprachkenntnisse }
+            \cvlang{ Englisch }{ Fließend }\\
+            \cvlang{ Deutsch }{ Selbständig }\\
+            \cvlang{ Spanisch }{ Fließend }\\
+            \cvlang{ Französisch }{ Muttersprache }\\
+        
+        \switchcolumn
+        
+        \cvsection{ Profil }
+        Machine Learning Engineer mit Erfahrung in Deep Learning, NLP und Computer Vision. Versiert in der Entwicklung von KI-Modellen, Cloud-Deployment und Datenanalyse. Durch meinen Hintergrund in Computational Science habe ich einen analytischen Denkstil entwickelt, um komplexe ML-Probleme zu lösen.
+        
+        \cvsection{ Berufserfahrung }
+            \cvevent{ Machine Learning Forscher }{ AI Research Lab GmbH }{ August 2023 - Heute }{ Berlin, Germany }
+            \begin{itemize}
+                \item Entwicklung und Optimierung fortschrittlicher Deep-Learning-Modelle zur Verbesserung der Vorhersagegenauigkeit von wissenschaftlichen Daten.
+                \item Systematische Bewertung der Modellleistung und Generalisierung über verschiedene Datensätze und Eingabegrößen hinweg.
+                \item Analyse des Einflusses von Datenrepräsentationen und Modellarchitektur auf die Robustheit der Vorhersagen.
+                \item Mitarbeit an einer wissenschaftlichen Veröffentlichung für eine Fachzeitschrift.
+            \end{itemize}
+            \vspace{0.5em}
+            \cvevent{ Machine Learning Ingenieur }{ Tech Innovations AG }{ Januar 2023 - Juli 2023 }{ Berlin, Germany }
+            \begin{itemize}
+                \item Entwicklung und Implementierung von maschinellen Lernmodellen für die Echtzeit-Datenverarbeitung und -analyse.
+                \item Entwicklung einer Computer Vision-Anwendung zur Klassifizierung von Bildern mit Deep Learning-Modellen, die eine hohe Genauigkeit auf Testdatensätzen erreicht.
+                \item Zusammenarbeit mit funktionsübergreifenden Teams zur Integration von KI-Lösungen in bestehende Systeme zur Effizienzsteigerung.
+                \item Mitwirkung an der Entwicklung eines KI-Agenten für ein Wortspiel mithilfe von Deep Q-Networks in PyTorch.
+            \end{itemize}
+            \vspace{0.5em}
+        
+        \cvsection{ Akademische Ausbildung }
+            \cvevent{ B.Sc. Computational Science }{ University of Berlin }{ Oktober 2020 - September 2024 }{ Berlin, Germany }
+            \begin{itemize}
+                \item Note: 1,9 (gut)
+                \item Abschlussarbeit: "Analyse komplexer Systeme mit maschinellem Lernen"
+                \item Relevante Kurse: Fortgeschrittene Algorithmen, Maschinelles Lernen, Big-Data-Technologien, Numerische Methoden, Software Engineering, Lineare Algebra und Analysis.
+            \end{itemize}
+            \vspace{0.5em}
+            \cvevent{ Zertifizierungskurs zum Datenanalysten }{ Online Learning Academy }{ Februar 2022 - August 2022 }{ Remote }
+            \begin{itemize}
+                \item Absolvierung eines umfassenden Programms zur Datenanalyse mit Fokus auf SQL, Python, Tableau, PowerBI und Statistik.
+                \item Praktische Erfahrung in Datenbereinigung, Visualisierung und Erstellung von Dashboards.
+            \end{itemize}
+            \vspace{0.5em}
+        
+        \cvsection{ Ausgewählte Projekte }
+        \cvevent
+            { KI-gestützter Chatbot }
+            { \cvreference{\faGithub}{ https://github.com/john-doe/ai-chatbot } }
+            {}
+            {}
+        Entwicklung eines Chatbots mit NLP-Techniken zur Bereitstellung von Kundensupport, integriert in eine Webanwendung für Echtzeit-Interaktion.\\
+        \vspace{0.5em}
+        \cvevent
+            { Bildklassifizierungssystem }
+            { \cvreference{\faGithub}{ https://github.com/john-doe/image-classification } }
+            {}
+            {}
+        Erstellung einer Computer Vision-Anwendung zur Klassifizierung von Bildern mit Deep Learning-Modellen, die eine hohe Genauigkeit auf Testdatensätzen erreicht.\\
+        \vspace{0.5em}
+        \cvevent
+            { Groß angelegte Textanalyse }
+            { \cvreference{\faGithub}{ https://github.com/john-doe/large-scale-text-analysis } }
+            {}
+            {}
+        Mitarbeit beim Aufbau eines GPU-Clusters zur Extraktion spezifischer Aussagen aus einem großen Korpus von Webarchiv-Dateien mit Regex und ML-Algorithmen, gefolgt von einer NLP-Analyse der Daten.\\
+        \vspace{0.5em}
+        \cvevent
+            { Modell zur Finanzrisikobewertung }
+            { \cvreference{\faGithub}{ https://github.com/john-doe/financial-risk-assessment } }
+            {}
+            {}
+        Entwicklung eines maschinellen Lernmodells zur Vorhersage von Finanzrisiken mit hoher Genauigkeit auf Testdaten. Dabei wurden Kenntnisse in Datenvorverarbeitung, Feature Engineering und Modelloptimierung demonstriert.\\
+        \vspace{0.5em}
+
+        
+    \end{paracol}
+
+\end{document}

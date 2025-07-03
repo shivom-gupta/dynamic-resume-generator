@@ -1,0 +1,343 @@
+{
+  "personal_info": {
+    "name": "John Doe",
+    "email": "john.doe.email@email.com",
+    "phone": "+49 123 4567890",
+    "location": "Berlin, Germany",
+    "linkedin": "john-doe",
+    "github": "john-doe",
+    "homepage": "https://john-doe.github.io/"
+  },
+  "ui_text": {
+    "en": {
+      "tech_stack_header": "Technical Skills",
+      "soft_skills_header": "Soft Skills",
+      "learning_header": "Currently Learning",
+      "languages_header": "Language Proficiency",
+      "about_me_header": "Profile",
+      "experience_header": "Professional Experience",
+      "education_header": "Education",
+      "projects_header": "Selected Projects",
+      "tagline_base": ""
+    },
+    "de": {
+      "tech_stack_header": "Technische \\\\ Kenntnisse",
+      "soft_skills_header": "Soziale \\\\ Kompetenzen",
+      "learning_header": "Aktuell in \\\\ Weiterbildung",
+      "languages_header": "Sprachkenntnisse",
+      "about_me_header": "Profil",
+      "experience_header": "Berufserfahrung",
+      "education_header": "Akademische Ausbildung",
+      "projects_header": "Ausgewählte Projekte",
+      "tagline_base": ""
+    }
+  },
+  "job_profiles": {
+    "MachineLearningEngineer": {
+      "en": "Machine Learning Engineer",
+      "de": "Machine Learning Engineer"
+    },
+    "DataScientist": {
+      "en": "Data Scientist",
+      "de": "Data Scientist"
+    },
+    "DataAnalyst": {
+      "en": "Data Analyst",
+      "de": "Datenanalyst"
+    },
+    "BIAnalyst": {
+      "en": "BI Analyst",
+      "de": "BI-Analyst"
+    },
+    "AIEngineer": {
+      "en": "AI Engineer",
+      "de": "KI-Ingenieur"
+    }
+  },
+  "summaries": {
+    "MachineLearningEngineer": {
+      "en": "Machine Learning Engineer with expertise in deep learning, NLP, and computer vision. Skilled in AI model development, cloud deployment, and data analysis. Brings a strong analytical approach from a computational science background to solve complex machine learning challenges.",
+      "de": "Machine Learning Engineer mit Erfahrung in Deep Learning, NLP und Computer Vision. Versiert in der Entwicklung von KI-Modellen, Cloud-Deployment und Datenanalyse. Durch meinen Hintergrund in Computational Science habe ich einen analytischen Denkstil entwickelt, um komplexe ML-Probleme zu lösen."
+    },
+    "DataScientist": {
+      "en": "Data Scientist with a strong foundation in statistical modeling and machine learning. Experienced in predictive modeling, data visualization using SQL, Power BI, and Tableau, and developing scalable ML solutions for complex data analysis.",
+      "de": "Data Scientist mit soliden Kenntnissen in statistischer Modellierung und maschinellem Lernen. Erfahrung in der Erstellung von Vorhersagemodellen, der Datenvisualisierung mit SQL, Power BI und Tableau sowie in der Entwicklung skalierbarer ML-Lösungen für komplexe Datenanalysen."
+    },
+    "DataAnalyst": {
+      "en": "Detail-oriented Data Analyst with certified skills in SQL, Python, Tableau, and PowerBI. Experienced in creating interactive dashboards, performing statistical analysis, and improving data accuracy for business clients. Achieved excellent client satisfaction on freelance projects.",
+      "de": "Zuverlässiger Datenanalyst mit Zertifizierungen in SQL, Python, Tableau und PowerBI. Erfahrung in der Erstellung interaktiver Dashboards, statistischer Analysen und der Verbesserung der Datenqualität für Geschäftskunden. Kunden gaben durchweg positives Feedback zu meinen freiberuflichen Projekten."
+    },
+    "BIAnalyst": {
+      "en": "BI Analyst with proven expertise in SQL, Tableau, and PowerBI. Experienced in creating interactive dashboards, analyzing financial data, and delivering actionable insights to support business decisions. Consistently achieved high client satisfaction in freelance roles by improving data accuracy and providing clear, impactful visualizations.",
+      "de": "BI-Analyst mit nachgewiesener Expertise in SQL, Tableau und PowerBI. Erfahren in der Erstellung interaktiver Dashboards, der Analyse von Finanzdaten und der Bereitstellung handlungsorientierter Erkenntnisse zur Unterstützung von Geschäftsentscheidungen. In freiberuflichen Projekten durchweg hohe Kundenzufriedenheit durch die Verbesserung der Datengenauigkeit und die Bereitstellung klarer, wirkungsvoller Visualisierungen."
+    },
+    "AIEngineer": {
+      "en": "AI Engineer specializing in the development and implementation of advanced AI systems, including deep learning models, NLP applications, and AI agents. Proficient in PyTorch, AWS, and modern architectures, with hands-on experience in building robust and scalable AI solutions. Combines a strong theoretical background with practical skills to solve complex engineering challenges.",
+      "de": "KI-Ingenieur, spezialisiert auf die Entwicklung und Implementierung fortschrittlicher KI-Systeme, einschließlich Deep-Learning-Modelle, NLP-Anwendungen und KI-Agenten. Versiert in PyTorch, AWS und modernen Architekturen, mit praktischer Erfahrung im Aufbau robuster und skalierbarer KI-Lösungen. Kombiniert einen starken theoretischen Hintergrund mit praktischen Fähigkeiten, um komplexe technische Herausforderungen zu lösen."
+    }
+  },
+  "experience": [
+    {
+      "title": {
+        "en": "Machine Learning Researcher",
+        "de": "Machine Learning Forscher"
+      },
+      "company": "AI Research Lab GmbH",
+      "dates": {
+        "en": "August 2023 - Present",
+        "de": "August 2023 - Heute"
+      },
+      "location": "Berlin, Germany",
+      "description": {
+        "en": [
+          "Developed and optimized advanced deep learning models to improve predictive modeling accuracy for scientific data.",
+          "Systematically evaluated model performance and generalization across diverse datasets and input sizes.",
+          "Analyzed the impact of data representation and model architecture on prediction robustness, contributing to scalable and generalizable ML solutions.",
+          "Collaborating on a research paper for a peer-reviewed journal."
+        ],
+        "de": [
+          "Entwicklung und Optimierung fortschrittlicher Deep-Learning-Modelle zur Verbesserung der Vorhersagegenauigkeit von wissenschaftlichen Daten.",
+          "Systematische Bewertung der Modellleistung und Generalisierung über verschiedene Datensätze und Eingabegrößen hinweg.",
+          "Analyse des Einflusses von Datenrepräsentationen und Modellarchitektur auf die Robustheit der Vorhersagen.",
+          "Mitarbeit an einer wissenschaftlichen Veröffentlichung für eine Fachzeitschrift."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Machine Learning Engineer",
+        "de": "Machine Learning Ingenieur"
+      },
+      "company": "Tech Innovations AG",
+      "dates": {
+        "en": "January 2023 - July 2023",
+        "de": "Januar 2023 - Juli 2023"
+      },
+      "location": "Berlin, Germany",
+      "description": {
+        "en": [
+          "Designed and implemented machine learning models for real-time data processing and analysis.",
+          "Developed a computer vision application to classify images using deep learning models, achieving high accuracy on test datasets.",
+          "Collaborated with cross-functional teams to integrate AI solutions into existing systems, enhancing operational efficiency.",
+          "Contributed to the development of an AI agent for a word game using Deep Q-Networks in PyTorch."
+        ],
+        "de": [
+          "Entwicklung und Implementierung von maschinellen Lernmodellen für die Echtzeit-Datenverarbeitung und -analyse.",
+          "Entwicklung einer Computer Vision-Anwendung zur Klassifizierung von Bildern mit Deep Learning-Modellen, die eine hohe Genauigkeit auf Testdatensätzen erreicht.",
+          "Zusammenarbeit mit funktionsübergreifenden Teams zur Integration von KI-Lösungen in bestehende Systeme zur Effizienzsteigerung.",
+          "Mitwirkung an der Entwicklung eines KI-Agenten für ein Wortspiel mithilfe von Deep Q-Networks in PyTorch."
+        ]
+      }
+    }
+  ],
+  "education": [
+    {
+      "degree": {
+        "en": "BSc. Computational Science",
+        "de": "B.Sc. Computational Science"
+      },
+      "university": "University of Berlin",
+      "dates": {
+        "en": "October 2020 - September 2024",
+        "de": "Oktober 2020 - September 2024"
+      },
+      "location": "Berlin, Germany",
+      "details": {
+        "en": [
+          "GPA: 1.9",
+          "Thesis: 'Analysis of Complex Systems using Machine Learning'",
+          "Relevant Coursework: Advanced Algorithms, Machine Learning, Big Data Technologies, Numerical Methods, Software Engineering, Linear Algebra and Calculus."
+        ],
+        "de": [
+          "Note: 1,9 (gut)",
+          "Abschlussarbeit: \"Analyse komplexer Systeme mit maschinellem Lernen\"",
+          "Relevante Kurse: Fortgeschrittene Algorithmen, Maschinelles Lernen, Big-Data-Technologien, Numerische Methoden, Software Engineering, Lineare Algebra und Analysis."
+        ]
+      }
+    },
+    {
+      "degree": {
+        "en": "Data Analyst Certification Course",
+        "de": "Zertifizierungskurs zum Datenanalysten"
+      },
+      "university": "Online Learning Academy",
+      "dates": {
+        "en": "February 2022 - August 2022",
+        "de": "Februar 2022 - August 2022"
+      },
+      "location": "Remote",
+      "details": {
+        "en": [
+          "Completed a comprehensive program focused on data analysis, covering key skills in SQL, Python, Tableau, PowerBI and statistical analysis.",
+          "Gained hands-on experience in data cleaning, data visualization, and dashboard creation."
+        ],
+        "de": [
+          "Absolvierung eines umfassenden Programms zur Datenanalyse mit Fokus auf SQL, Python, Tableau, PowerBI und Statistik.",
+          "Praktische Erfahrung in Datenbereinigung, Visualisierung und Erstellung von Dashboards."
+        ]
+      }
+    }
+  ],
+  "languages": [
+    {
+      "name": {
+        "en": "English",
+        "de": "Englisch"
+      },
+      "level": {
+        "en": "Fluent",
+        "de": "Fließend"
+      }
+    },
+    {
+      "name": {
+        "en": "German",
+        "de": "Deutsch"
+      },
+      "level": {
+        "en": "Proficient",
+        "de": "Selbständig"
+      }
+    },
+    {
+      "name": {
+        "en": "Spanish",
+        "de": "Spanisch"
+      },
+      "level": {
+        "en": "Fluent",
+        "de": "Fließend"
+      }
+    },
+    {
+      "name": {
+        "en": "French",
+        "de": "Französisch"
+      },
+      "level": {
+        "en": "Native",
+        "de": "Muttersprache"
+      }
+    }
+  ],
+  "tech_skills": [
+    {
+      "group_name": {
+        "en": "Core Competencies",
+        "de": "Kernkompetenzen"
+      },
+      "skills": [
+        {"name": "Deep Learning", "highlight": true, "tags": ["MachineLearningEngineer", "DataScientist", "AIEngineer"]},
+        {"name": "NLP", "highlight": true, "tags": ["MachineLearningEngineer", "DataScientist", "AIEngineer"]},
+        {"name": "Computer Vision", "highlight": false, "tags": ["MachineLearningEngineer", "AIEngineer"]},
+        {"name": "Machine Learning", "highlight": true, "tags": ["MachineLearningEngineer", "DataScientist", "AIEngineer", "DataAnalyst"]},
+        {"name": "Data Science", "highlight": false, "tags": ["DataScientist", "DataAnalyst"]},
+        {"name": "Data Analysis", "highlight": true, "tags": ["DataScientist", "DataAnalyst", "BIAnalyst"]},
+        {"name": "Data Visualization", "highlight": false, "tags": ["DataScientist", "DataAnalyst", "BIAnalyst"]},
+        {"name": "BI Development", "highlight": true, "tags": ["BIAnalyst"]},
+        {"name": "Statistical Analysis", "highlight": true, "tags": ["DataScientist", "DataAnalyst", "BIAnalyst"]},
+        {"name": "Data Preprocessing", "highlight": true, "tags": ["MachineLearningEngineer", "DataScientist", "DataAnalyst", "AIEngineer"]},
+        {"name": "Feature Engineering", "highlight": true, "tags": ["MachineLearningEngineer", "DataScientist", "AIEngineer"]},
+        {"name": "CI CD", "highlight": false, "tags": ["MachineLearningEngineer", "AIEngineer", "DataScientist", "DataAnalyst"]},
+        {"name": "EDA", "highlight": false, "tags": ["DataScientist", "DataAnalyst", "BIAnalyst"]},
+        {"name": "Hypothesis Testing", "highlight": false, "tags": ["DataScientist", "DataAnalyst", "BIAnalyst"]},
+        {"name": "AI Agents", "highlight": true, "tags": ["AIEngineer"]}
+      ]
+    },
+    {
+      "group_name": {
+        "en": "Tools & Technologies",
+        "de": "Tools & Technologien"
+      },
+      "skills": [
+        {"name": "PyTorch", "highlight": true, "tags": ["MachineLearningEngineer", "DataScientist", "AIEngineer"]},
+        {"name": "TensorFlow", "highlight": false, "tags": ["MachineLearningEngineer", "DataScientist", "AIEngineer"]},
+        {"name": "Python", "highlight": true, "tags": ["MachineLearningEngineer", "DataScientist", "DataAnalyst", "AIEngineer"]},
+        {"name": "SQL", "highlight": true, "tags": ["DataScientist", "DataAnalyst", "BIAnalyst"]},
+        {"name": "Excel", "highlight": false, "tags": ["DataAnalyst", "BIAnalyst"]},
+        {"name": "Tableau", "highlight": true, "tags": ["DataAnalyst", "BIAnalyst"]},
+        {"name": "PowerBI", "highlight": true, "tags": ["DataAnalyst", "BIAnalyst"]},
+        {"name": "Git", "highlight": true, "tags": ["MachineLearningEngineer", "DataScientist", "DataAnalyst", "AIEngineer"]},
+        {"name": "Docker", "highlight": false, "tags": ["MachineLearningEngineer", "AIEngineer"]},
+        {"name": "AWS", "highlight": true, "tags": ["MachineLearningEngineer", "AIEngineer", "DataScientist", "DataAnalyst"]},
+        {"name": "Linux", "highlight": true, "tags": ["MachineLearningEngineer", "DataScientist", "DataAnalyst", "AIEngineer"]},
+        {"name": "R", "highlight": false, "tags": ["DataScientist", "DataAnalyst"]},
+        {"name": "C, C++", "highlight": false, "tags": ["MachineLearningEngineer", "DataScientist", "AIEngineer"]}
+      ]
+    }
+  ],
+  "soft_skills": [
+    {"name": {"en" : "Problem Solving", "de" : "Problemlösungskompetenz"}, "highlight": true, "tags": ["MachineLearningEngineer", "DataScientist", "DataAnalyst", "AIEngineer", "BIAnalyst"]},
+    {"name": {"en" : "Analytical Thinking", "de" : "Analytisches Denken"}, "highlight": true, "tags": ["MachineLearningEngineer", "DataScientist", "DataAnalyst", "AIEngineer", "BIAnalyst"]},
+    {"name": {"en" : "Team Collaboration", "de" : "Teamarbeit"}, "highlight": true, "tags": ["MachineLearningEngineer", "DataScientist", "DataAnalyst", "AIEngineer", "BIAnalyst"]},
+    {"name": {"en" : "Communication", "de" : "Kommunikation"}, "highlight": true, "tags": ["MachineLearningEngineer", "DataScientist", "DataAnalyst", "AIEngineer", "BIAnalyst"]}
+  ],
+  "learning": [
+    {"name": {"en": "Reinforcement Learning", "de": "Verstärkendes Lernen"}, "highlight": true, "tags": ["MachineLearningEngineer", "AIEngineer"]},
+    {"name": {"en": "AI Agents", "de": "KI-Agenten"}, "highlight": true, "tags": ["AIEngineer"]},
+    {"name": {"en": "MLOps", "de": "MLOps"}, "highlight": false, "tags": ["MachineLearningEngineer"]},
+    {"name": {"en": "German Language", "de": "Deutsche Sprache"}, "highlight": true, "tags": ["DataScientist", "DataAnalyst", "BIAnalyst", "MachineLearningEngineer", "AIEngineer"]}
+  ],
+  "projects": [
+    {
+      "name": {
+        "en": "AI-Powered Chatbot",
+        "de": "KI-gestützter Chatbot"
+      },
+      "github": "https://github.com/john-doe/ai-chatbot",
+      "description": {
+        "en": "Developed a chatbot using NLP techniques to provide customer support, integrating it with a web application for real-time interaction.",
+        "de": "Entwicklung eines Chatbots mit NLP-Techniken zur Bereitstellung von Kundensupport, integriert in eine Webanwendung für Echtzeit-Interaktion."
+      },
+      "tags": ["MachineLearningEngineer", "AIEngineer", "DataScientist"]
+    },
+    {
+      "name": {
+        "en": "Image Classification System",
+        "de": "Bildklassifizierungssystem"
+      },
+      "github": "https://github.com/john-doe/image-classification",
+      "description": {
+        "en": "Created a computer vision application to classify images using deep learning models, achieving high accuracy on test datasets.",
+        "de": "Erstellung einer Computer Vision-Anwendung zur Klassifizierung von Bildern mit Deep Learning-Modellen, die eine hohe Genauigkeit auf Testdatensätzen erreicht."
+      },
+      "tags": ["MachineLearningEngineer", "AIEngineer"]
+    },
+    {
+      "name": {
+        "en": "Large-Scale Text Analysis",
+        "de": "Groß angelegte Textanalyse"
+      },
+      "github": "https://github.com/john-doe/large-scale-text-analysis",
+      "description": {
+        "en": "Collaborated to set up a GPU cluster to extract specific statements from a large corpus of web archive files using regex and ML algorithms, followed by NLP analysis of the extracted data.",
+        "de": "Mitarbeit beim Aufbau eines GPU-Clusters zur Extraktion spezifischer Aussagen aus einem großen Korpus von Webarchiv-Dateien mit Regex und ML-Algorithmen, gefolgt von einer NLP-Analyse der Daten."
+      },
+      "tags": ["DataScientist", "MachineLearningEngineer", "DataAnalyst", "AIEngineer"]
+    },
+    {
+      "name": {
+        "en": "Environmental Data Analysis",
+        "de": "Umweltdatenanalyse"
+      },
+      "github": "https://github.com/john-doe/environmental-data-analysis",
+      "description": {
+        "en": "Developed an SQL-based analysis to assess CO2 emission changes across countries, providing actionable insights and recommendations to address environmental trends.",
+        "de": "Durchführung einer SQL-Analyse zur Bewertung von Veränderungen der CO2-Emissionen in verschiedenen Ländern mit konkreten Handlungsempfehlungen zur Adressierung von Umwelttrends."
+      },
+      "tags": ["DataAnalyst", "BIAnalyst", "DataScientist"]
+    },
+    {
+      "name": {
+        "en": "Financial Risk Assessment Model",
+        "de": "Modell zur Finanzrisikobewertung"
+      },
+      "github": "https://github.com/john-doe/financial-risk-assessment",
+      "description": {
+        "en": "Developed a machine learning model to predict financial risk, achieving high accuracy on test data. Demonstrated strong data preprocessing, feature engineering, and model optimization skills.",
+        "de": "Entwicklung eines maschinellen Lernmodells zur Vorhersage von Finanzrisiken mit hoher Genauigkeit auf Testdaten. Dabei wurden Kenntnisse in Datenvorverarbeitung, Feature Engineering und Modelloptimierung demonstriert."
+      },
+      "tags": ["DataScientist", "DataAnalyst", "MachineLearningEngineer", "BIAnalyst"]
+    }
+  ]
+}

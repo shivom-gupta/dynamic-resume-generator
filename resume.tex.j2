@@ -1,0 +1,140 @@
+% resume_template.tex
+\documentclass[9pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=0.8cm,right=0.8cm,top=0.8cm,bottom=0.8cm,columnsep=0.75cm}
+\usepackage{paracol}
+\usepackage[none]{hyphenat}
+\usepackage{microtype}
+
+
+\ifxetexorluatex
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{PrimaryColor}{HTML}{2E2E2E}
+\definecolor{SecondaryColor}{HTML}{0039AC}
+\definecolor{ThirdColor}{HTML}{FFAA00}
+\definecolor{BodyColor}{HTML}{666666}
+\definecolor{EmphasisColor}{HTML}{2E2E2E}
+\definecolor{BackgroundColor}{HTML}{E2E2E2}
+
+\colorlet{name}{PrimaryColor}
+\colorlet{tagline}{SecondaryColor}
+\colorlet{heading}{PrimaryColor}
+\colorlet{headingrule}{ThirdColor}
+\colorlet{subheading}{SecondaryColor}
+\colorlet{accent}{SecondaryColor}
+\colorlet{emphasis}{EmphasisColor}
+\colorlet{body}{BodyColor}
+\pagecolor{BackgroundColor}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\small\bfseries}
+\renewcommand{\cvsectionfont}{\Large\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+{% raw %}
+\renewcommand{\itemmarker}{{\small\textbullet}}
+{% endraw %}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\newenvironment{sloppypar*}{\sloppy\ignorespaces}{\par}
+
+\begin{document}
+    \sloppy
+    \name{ {{ personal_info.name }} }
+    \tagline{ {{ profile_tagline }} }
+    \photoL{4cm}{../me.png}
+
+    \personalinfo{
+        \email{ {{ personal_info.email }} }\smallskip
+        \phone{ {{ personal_info.phone }} }
+        \location{ {{ personal_info.location }} }\\
+        \linkedin{ {{ personal_info.linkedin }} }
+        \github{ {{ personal_info.github }} }
+        \homepage{ {{ personal_info.homepage }} }
+    }
+    
+    \makecvheader
+    \columnratio{0.25}
+    \begin{paracol}{2}
+        
+        \cvsection{ {{ ui.tech_stack_header }} }
+            \begin{sloppypar*}
+                {% for group in tech_skills %}
+                \cvtags{
+                    \noindent {% for skill in group.skills %}{{ skill.name | escape_latex }}{% if skill.highlight %}/true{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}
+                }
+                {% endfor %}
+            \end{sloppypar*}
+
+        \cvsection{ {{ ui.soft_skills_header }} }
+            \begin{sloppypar*}
+                \cvtags{
+                    {% for skill in soft_skills %}{{ skill.name | escape_latex }}{% if skill.highlight %}/true{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}
+                }
+            \end{sloppypar*}
+        
+        \cvsection{ {{ ui.learning_header }} }
+            \begin{sloppypar*}
+                \cvtags{
+                    {% for skill in learning %}{{ skill.name | escape_latex }}{% if skill.highlight %}/true{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}
+                }
+            \end{sloppypar*}
+        
+        \cvsection{ {{ ui.languages_header }} }
+            {% for lang in languages %}
+            \cvlang{ {{ lang.name }} }{ {{ lang.level }} }\\
+            {% endfor %}
+        
+        \switchcolumn
+        
+        \cvsection{ {{ ui.about_me_header }} }
+        {{ summary | escape_latex }}
+        
+        \cvsection{ {{ ui.experience_header }} }
+        {% for job in experience %}
+            \cvevent{ {{ job.title | escape_latex }} }{ {{ job.company | escape_latex }} }{ {{ job.dates | escape_latex }} }{ {{ job.location | escape_latex }} }
+            \begin{itemize}
+                {% for item in job.description %}
+                \item {{ item | escape_latex }}
+                {% endfor %}
+            \end{itemize}
+            \vspace{0.5em}
+        {% endfor %}
+        
+        \cvsection{ {{ ui.education_header }} }
+        {% for edu in education %}
+            \cvevent{ {{ edu.degree | escape_latex }} }{ {{ edu.university | escape_latex }} }{ {{ edu.dates | escape_latex }} }{ {{ edu.location | escape_latex }} }
+            \begin{itemize}
+                {% for detail in edu.details %}
+                \item {{ detail | escape_latex }}
+                {% endfor %}
+            \end{itemize}
+            \vspace{0.5em}
+        {% endfor %}
+        
+        \cvsection{ {{ ui.projects_header }} }
+        {% for proj in projects %}
+        \cvevent
+            { {{ proj.name | escape_latex }} }
+            {% if proj.github %}
+            { \cvreference{\faGithub}{ {{ proj.github | escape_latex }} } }
+            {% else %}
+            {}
+            {% endif %}
+            {}
+            {}
+        {{ proj.description | escape_latex }}\\
+        \vspace{0.5em}
+        {% endfor %}
+
+        
+    \end{paracol}
+
+\end{document}

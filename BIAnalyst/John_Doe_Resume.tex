@@ -1,0 +1,149 @@
+% resume_template.tex
+\documentclass[9pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=0.8cm,right=0.8cm,top=0.8cm,bottom=0.8cm,columnsep=0.75cm}
+\usepackage{paracol}
+\usepackage[none]{hyphenat}
+\usepackage{microtype}
+
+
+\ifxetexorluatex
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{PrimaryColor}{HTML}{2E2E2E}
+\definecolor{SecondaryColor}{HTML}{0039AC}
+\definecolor{ThirdColor}{HTML}{FFAA00}
+\definecolor{BodyColor}{HTML}{666666}
+\definecolor{EmphasisColor}{HTML}{2E2E2E}
+\definecolor{BackgroundColor}{HTML}{E2E2E2}
+
+\colorlet{name}{PrimaryColor}
+\colorlet{tagline}{SecondaryColor}
+\colorlet{heading}{PrimaryColor}
+\colorlet{headingrule}{ThirdColor}
+\colorlet{subheading}{SecondaryColor}
+\colorlet{accent}{SecondaryColor}
+\colorlet{emphasis}{EmphasisColor}
+\colorlet{body}{BodyColor}
+\pagecolor{BackgroundColor}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\small\bfseries}
+\renewcommand{\cvsectionfont}{\Large\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\newenvironment{sloppypar*}{\sloppy\ignorespaces}{\par}
+
+\begin{document}
+    \sloppy
+    \name{ John Doe }
+    \tagline{ BI Analyst }
+    \photoL{4cm}{../me.png}
+
+    \personalinfo{
+        \email{ john.doe.email@email.com }\smallskip
+        \phone{ +49 123 4567890 }
+        \location{ Berlin, Germany }\\
+        \linkedin{ john-doe }
+        \github{ john-doe }
+        \homepage{ https://john-doe.github.io/ }
+    }
+    
+    \makecvheader
+    \columnratio{0.25}
+    \begin{paracol}{2}
+        
+        \cvsection{ Technical Skills }
+            \begin{sloppypar*}
+                \cvtags{
+                    \noindent Data Analysis/true, Data Visualization, BI Development/true, Statistical Analysis/true, EDA, Hypothesis Testing                }
+                \cvtags{
+                    \noindent SQL/true, Excel, Tableau/true, PowerBI/true                }
+            \end{sloppypar*}
+
+        \cvsection{ Soft Skills }
+            \begin{sloppypar*}
+                \cvtags{
+Problem Solving/true, Analytical Thinking/true, Team Collaboration/true, Communication/true                }
+            \end{sloppypar*}
+        
+        \cvsection{ Currently Learning }
+            \begin{sloppypar*}
+                \cvtags{
+German Language/true                }
+            \end{sloppypar*}
+        
+        \cvsection{ Language Proficiency }
+            \cvlang{ English }{ Fluent }\\
+            \cvlang{ German }{ Proficient }\\
+            \cvlang{ Spanish }{ Fluent }\\
+            \cvlang{ French }{ Native }\\
+        
+        \switchcolumn
+        
+        \cvsection{ Profile }
+        BI Analyst with proven expertise in SQL, Tableau, and PowerBI. Experienced in creating interactive dashboards, analyzing financial data, and delivering actionable insights to support business decisions. Consistently achieved high client satisfaction in freelance roles by improving data accuracy and providing clear, impactful visualizations.
+        
+        \cvsection{ Professional Experience }
+            \cvevent{ Machine Learning Researcher }{ AI Research Lab GmbH }{ August 2023 - Present }{ Berlin, Germany }
+            \begin{itemize}
+                \item Developed and optimized advanced deep learning models to improve predictive modeling accuracy for scientific data.
+                \item Systematically evaluated model performance and generalization across diverse datasets and input sizes.
+                \item Analyzed the impact of data representation and model architecture on prediction robustness, contributing to scalable and generalizable ML solutions.
+                \item Collaborating on a research paper for a peer-reviewed journal.
+            \end{itemize}
+            \vspace{0.5em}
+            \cvevent{ Machine Learning Engineer }{ Tech Innovations AG }{ January 2023 - July 2023 }{ Berlin, Germany }
+            \begin{itemize}
+                \item Designed and implemented machine learning models for real-time data processing and analysis.
+                \item Developed a computer vision application to classify images using deep learning models, achieving high accuracy on test datasets.
+                \item Collaborated with cross-functional teams to integrate AI solutions into existing systems, enhancing operational efficiency.
+                \item Contributed to the development of an AI agent for a word game using Deep Q-Networks in PyTorch.
+            \end{itemize}
+            \vspace{0.5em}
+        
+        \cvsection{ Education }
+            \cvevent{ BSc. Computational Science }{ University of Berlin }{ October 2020 - September 2024 }{ Berlin, Germany }
+            \begin{itemize}
+                \item GPA: 1.9
+                \item Thesis: 'Analysis of Complex Systems using Machine Learning'
+                \item Relevant Coursework: Advanced Algorithms, Machine Learning, Big Data Technologies, Numerical Methods, Software Engineering, Linear Algebra and Calculus.
+            \end{itemize}
+            \vspace{0.5em}
+            \cvevent{ Data Analyst Certification Course }{ Online Learning Academy }{ February 2022 - August 2022 }{ Remote }
+            \begin{itemize}
+                \item Completed a comprehensive program focused on data analysis, covering key skills in SQL, Python, Tableau, PowerBI and statistical analysis.
+                \item Gained hands-on experience in data cleaning, data visualization, and dashboard creation.
+            \end{itemize}
+            \vspace{0.5em}
+        
+        \cvsection{ Selected Projects }
+        \cvevent
+            { Environmental Data Analysis }
+            { \cvreference{\faGithub}{ https://github.com/john-doe/environmental-data-analysis } }
+            {}
+            {}
+        Developed an SQL-based analysis to assess CO2 emission changes across countries, providing actionable insights and recommendations to address environmental trends.\\
+        \vspace{0.5em}
+        \cvevent
+            { Financial Risk Assessment Model }
+            { \cvreference{\faGithub}{ https://github.com/john-doe/financial-risk-assessment } }
+            {}
+            {}
+        Developed a machine learning model to predict financial risk, achieving high accuracy on test data. Demonstrated strong data preprocessing, feature engineering, and model optimization skills.\\
+        \vspace{0.5em}
+
+        
+    \end{paracol}
+
+\end{document}
