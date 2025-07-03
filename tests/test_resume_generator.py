@@ -18,8 +18,7 @@ def test_resume_generation(profile):
     stdout = result.stdout.decode('utf-8', errors='ignore')
     stderr = result.stderr.decode('utf-8', errors='ignore')
 
-    assert result.returncode == 0, f"Script failed for profile {profile}: {stderr}"
-
+    assert result.returncode == 0, f"Script failed for profile {profile}.\n\nSTDOUT:\n{stdout}\n\nSTDERR:\n{stderr}"
     assert os.path.isdir(profile), f"Output directory for {profile} was not created."
 
     base_name_en = "John_Doe_Resume"
